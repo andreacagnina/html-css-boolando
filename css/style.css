@@ -7,3 +7,55 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* HEADER */
+
+header {
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-btw-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAV BAR */
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: white;
+    margin: 0 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* NAV BAR */
+
+/* LOGO */
+
+.logo>img {
+    width: 150px;
+}
+
+.p-t-d-15 {
+    padding: 15px 0 15px 0;
+}
+
+/* LOGO */
