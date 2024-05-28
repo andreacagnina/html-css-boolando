@@ -19,15 +19,17 @@ header {
     z-index: 1;
 }
 
+/* LAYOUT */
+
 .container,
+.container_main,
 .container_bottom {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.container_main {
-    max-width: 1200px;
-    margin: 100px auto;
+.p-t-100 {
+    padding-top: 100px;
 }
 
 .row {
@@ -36,12 +38,21 @@ header {
 }
 
 /* INLINE-BLOCK */
-.display-i-b {
-    display: inline-block;
+
+
+.align-sx {
+    text-align: left;
 }
 
-.flex-btw-center {
-    justify-content: space-between;
+.align-ce {
+    text-align: center;
+}
+
+.align-dx {
+    text-align: right;
+}
+
+.flex-y-center {
     align-items: center;
 }
 
@@ -55,6 +66,11 @@ li {
     color: white;
     font-weight: bold;
     display: inline-block;
+    font-size: 20px;
+}
+
+.align-sx li {
+    margin-right: 10px;
 }
 
 /* NAV BAR */
@@ -65,8 +81,8 @@ li {
     width: 150px;
 }
 
-.p-t-d-15 {
-    padding: 15px 0 15px 0;
+.p-15 {
+    padding: 15px 20px 15px 0;
 }
 
 /* LOGO */
@@ -116,7 +132,6 @@ li {
     position: absolute;
     right: 0;
     top: 10px;
-
 }
 
 .labels {
@@ -126,7 +141,11 @@ li {
     color: white;
     text-align: center;
     font-weight: 600;
+}
 
+.flex {
+    display: flex;
+    gap: 10px;
 }
 
 .label-red {
@@ -179,6 +198,7 @@ footer {
 i {
     font-size: 25px;
     padding: 5px;
+    color: white;
 }
 
 h5,
