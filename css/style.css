@@ -16,6 +16,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .container {
@@ -23,9 +24,19 @@ header {
     margin: 0 auto;
 }
 
+.container_main {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* INLINE-BLOCK */
+.display-i-b {
+    display: inline-block;
 }
 
 .flex-btw-center {
@@ -59,3 +70,86 @@ li {
 }
 
 /* LOGO */
+/* HEADER */
+
+/* MAIN */
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.content {
+    margin: 10px;
+    position: relative;
+}
+
+.content img {
+    width: 100%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+/* CARTE */
+.font-col_red-bold {
+    font-weight: 600;
+    color: red;
+}
+
+.font-del {
+    text-decoration: line-through;
+}
+
+.heart {
+    width: 60px;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heart.h_position {
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+}
+
+.labels {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.label-red {
+    background-color: red;
+    padding: 5px;
+
+}
+
+.label-green {
+    background-color: green;
+    padding: 5px;
+}
+
+.content:hover .d-block {
+    display: none;
+}
+
+.content:hover .d-none {
+    display: block;
+}
+
+/* BONUS */
+
+.heart:hover {
+    color: red;
+}
